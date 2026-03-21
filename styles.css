@@ -442,9 +442,9 @@ body {
 }
 
 .btn-primary:hover {
-    background: #00ffca;
+    background: #2600bd;
     transform: translateY(-2px);
-    box-shadow: 0 8px 32px rgba(0, 229, 176, 0.4);
+    box-shadow: 0 8px 32px rgba(4, 6, 149, 0.4);
 }
 
 .btn-ghost {
