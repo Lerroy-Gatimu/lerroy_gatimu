@@ -442,7 +442,8 @@ body {
 }
 
 .btn-primary:hover {
-    background: #2600bd;
+    color: var(--text-1);
+    background: var(--surface);
     transform: translateY(-2px);
     box-shadow: 0 8px 32px rgba(4, 6, 149, 0.4);
 }
