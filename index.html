@@ -367,17 +367,17 @@
                             <p class="project-desc">
                                 Core features implemented:
                                 JWT authentication with access + refresh tokens
-                                Organization/workspace management (multi-tenancy)
-                                Role-Based Access Control (Owner → Admin → Member → Viewer)
-                                API rate limiting via Redis
-                                Full audit logging (who did what, when, from where)
-                                Subscription plans (Free / Starter / Pro / Enterprise) with usage limits
+                                Organization/workspace management (multi-tenancy). 
+                                Role-Based Access Control (Owner → Admin → Member → Viewer). 
+                                API rate limiting via Redis. 
+                                Full audit logging (who did what, when, from where). 
+                                Subscription plans (Free / Starter / Pro / Enterprise) with usage limits.
 
                                 Key engineering decisions:
                                 Strict tenant data isolation — every query scoped by organization ID
-                                Layered dependency-injection architecture for auth & permission checks
+                                Layered dependency-injection architecture for auth & permission checks. 
                                 Async-first design throughout (database, Redis, API)
-                                Automated test suite covering auth flows
+                                Automated test suite covering auth flows. 
                             </p>
                             <div class="project-tech">
                                 <span>Python</span><span>PostgreSQL</span><span>FastAPI</span><span>JWT</span><span>Docker</span><span>Redis</span><span>Alembic</span>
