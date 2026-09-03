@@ -79,6 +79,8 @@
                     <span class="stack-pill">Rust</span>
                     <span class="stack-pill">TypeScript</span>
                     <span class="stack-pill">AWS</span>
+                    <span class="stack-pill">Data Warehouses</span>
+                    <span class="stack-pill">Lakehouses</span>
                     <span class="stack-pill">ETL/ELT</span>
                     <span class="stack-pill">Django</span>
                 </div>
@@ -91,7 +93,8 @@
                                 stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
                     </a>
-                    <a href="#projects" class="btn btn-ghost">View Projects</a>
+                    <a href="#projects" class="btn btn-primary">View Featured Projects</a>
+                    <a href="https://github.com/Lerroy-Gatimu" class="btn btn-primary" target="_blank">GitHub</a>
                 </div>
             </div>
 
@@ -275,6 +278,57 @@
                     <!-- Project: Jewellery Store -->
                     <article class="project-card reveal featured-card">
                         <div class="project-img-wrap">
+                            <img src="images/chipuka_screenshot.jpg" alt="Adorn Jewellery Store" class="project-img"
+                                loading="lazy">
+                            <div class="project-img-overlay"></div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-top">
+                                <span class="project-type">Full-Stack E-Commerce</span>
+                                <a href="https://chipukaacademy.com/" target="_blank" rel="noopener noreferrer"
+                                    class="project-link-icon" aria-label="View live site">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="1.8" stroke-linecap="round">
+                                        <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6" />
+                                        <polyline points="15 3 21 3 21 9" />
+                                        <line x1="10" y1="14" x2="21" y2="3" />
+                                    </svg>
+                                </a>
+                            </div>
+                            <h3 class="project-title">Online Jewellery Store</h3>
+                            <p class="project-desc"> Designed and built a full-stack web platform that digitizes
+                                end-to-end operations for Chipuka Academy, replacing manual processes with a single
+                                system used by academy staff, coaches, and parents.
+
+                                Architected a modular Django application across 10 apps (players, payments, attendance,
+                                rankings, academy, content, etc.), implementing role-based access control for parents,
+                                coaches, directors, and super admins. <br>
+                                Built an automated player registration and billing pipeline, including gender-based fee
+                                tiers, sequential player ID generation, and integration with Pesapal and M-Pesa payment
+                                verification.
+                                Developed a barcode-based attendance system using HMAC-signed, offline-verifiable
+                                barcodes, paired with automated PDF ID card generation via WeasyPrint.
+                                Implemented an automated reporting system that generates branded PDF player progress
+                                reports and fee statements in the background using Celery and Redis, triggered by staff
+                                actions.<br>
+                                Built a gamified merit-tracking leaderboard ("Premier Points") with real-time rank
+                                recalculation across multiple age-group tiers.
+                                Designed a mobile-first, responsive front end using hand-authored HTML/CSS/JavaScript,
+                                without a front-end framework, optimized for low-end devices.
+                                <br>Laid the groundwork for a future mobile application by implementing a documented
+                                REST
+                                API (Django REST Framework, JWT authentication, OpenAPI schema).
+                                Configured environment-variable-driven settings across development, staging, and
+                                production, using PostgreSQL and Cloudflare R2 object storage.
+                            </p>
+                            <div class="project-tech">
+                                <span>Python</span><span>Django</span><span>JavaScript</span><span>HTML</span><span>CSS</span><span>MySQL</span><span>Daraja
+                                    API</span><span>REST API</span><span>Cloudflare</span><span>cPanel</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="project-card reveal featured-card">
+                        <div class="project-img-wrap">
                             <img src="images/adorn_thumbnail1.jpg" alt="Adorn Jewellery Store" class="project-img"
                                 loading="lazy">
                             <div class="project-img-overlay"></div>
@@ -348,8 +402,8 @@
 
                     <article class="project-card reveal">
                         <div class="project-img-wrap">
-                            <img src="images/repo_thumbnail.jpg" alt="Multi-Tenant SaaS Backend with FastAPI" class="project-img"
-                                loading="lazy">
+                            <img src="images/repo_thumbnail.jpg" alt="Multi-Tenant SaaS Backend with FastAPI"
+                                class="project-img" loading="lazy">
                             <div class="project-img-overlay"></div>
                         </div>
                         <div class="project-content">
@@ -367,17 +421,17 @@
                             <p class="project-desc">
                                 Core features implemented:
                                 JWT authentication with access + refresh tokens
-                                Organization/workspace management (multi-tenancy). 
-                                Role-Based Access Control (Owner → Admin → Member → Viewer). 
-                                API rate limiting via Redis. 
-                                Full audit logging (who did what, when, from where). 
+                                Organization/workspace management (multi-tenancy).
+                                Role-Based Access Control (Owner → Admin → Member → Viewer).
+                                API rate limiting via Redis.
+                                Full audit logging (who did what, when, from where).
                                 Subscription plans (Free / Starter / Pro / Enterprise) with usage limits.
 
                                 Key engineering decisions:
                                 Strict tenant data isolation — every query scoped by organization ID
-                                Layered dependency-injection architecture for auth & permission checks. 
+                                Layered dependency-injection architecture for auth & permission checks.
                                 Async-first design throughout (database, Redis, API)
-                                Automated test suite covering auth flows. 
+                                Automated test suite covering auth flows.
                             </p>
                             <div class="project-tech">
                                 <span>Python</span><span>PostgreSQL</span><span>FastAPI</span><span>JWT</span><span>Docker</span><span>Redis</span><span>Alembic</span>
@@ -477,6 +531,53 @@
             <div class="container">
                 <div class="section-label reveal">Experience</div>
                 <h2 class="section-heading reveal">Professional work</h2>
+
+                <div class="timeline reveal">
+                    <article class="timeline-item">
+                        <div class="timeline-meta">
+                            <span class="timeline-date">July 2026 – Present</span>
+                            <span class="timeline-company">Chipuka Academy</span>
+                        </div>
+                        <div class="timeline-body">
+                            <h3 class="timeline-role">Software Engineer
+                                <a href="https://www.chipukaacademy.com/" target="_blank" rel="noopener noreferrer"
+                                    class="project-link-icon" aria-label="View live site">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="1.8" stroke-linecap="round">
+                                        <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6" />
+                                        <polyline points="15 3 21 3 21 9" />
+                                        <line x1="10" y1="14" x2="21" y2="3" />
+                                    </svg>
+                                </a>
+                            </h3>
+
+                            <ul class="timeline-list">
+                                <li>Built a full-stack Django 6 backend running an entire youth football academy
+                                    end-to-end — public marketing site,
+                                    parent/player onboarding, fee billing, attendance tracking, player development
+                                    records, and staff operations tooling —
+                                    backed by PostgreSQL, across 11 Django apps, with Cloudflare R2 object storage in
+                                    production.
+                                </li>
+                                <li>Designed role-based access control (Super Admin, Academy Director, Coach, Parent)
+                                    enforced centrally via reusable
+                                    permission helpers and an HMAC-signed barcode check-in system.</li>
+                                <li>Automated fee collection via Pesapal (card/M-Pesa) with IPN webhook handling plus a
+                                    manual M-Pesa verification
+                                    flow, driven by Celery + Redis background jobs (7 scheduled tasks) covering monthly
+                                    invoicing, overdue flagging, and
+                                    payment reminders.
+                                    ● Built a Django REST Framework + JWT API layer with an auto-generated OpenAPI
+                                    schema, plus WeasyPrint-rendered
+                                    PDF report generation and a shared branded HTML/email template system.</li>
+                            </ul>
+                            <div class="timeline-tags">
+                                <span>Django</span><span>PostgreSQL</span><span>Celery</span><span>Redis</span><span>Cloudflare
+                                    R2</span><span>Nginx</span>
+                            </div>
+                        </div>
+                    </article>
+                </div><br>
 
                 <div class="timeline reveal">
                     <article class="timeline-item">
